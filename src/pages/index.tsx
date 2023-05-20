@@ -1,25 +1,10 @@
 import { useState } from 'react';
-import Image from 'next/image'
+import Header from '@/Components/Header';
 
 export default function Home() {
   return (
     <div className="App">
-    <header>
-      <Image
-        style={{
-          borderRadius: "9999%",
-          marginTop: "2px",
-        }}
-        width= {65}
-        height= {65}
-        src="/letschatLOGO.jpg"
-        alt=""
-      />
-      <div className="heading">
-        <h3>Let&apos;s Chat</h3>
-        <p>A place where everyone can open up</p>
-      </div>
-    </header>
+    <Header />
     <section>
       {/* {user ? (
         <div className="main_context">
