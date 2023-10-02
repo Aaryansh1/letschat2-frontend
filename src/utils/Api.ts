@@ -27,7 +27,7 @@ export async function fetchAPI<T>(endpoint: string, method: string, data: any | 
 
   try {
     const response: AxiosResponse<T> = await axiosInstance.request<T>(config);
-    console.log("yo",response);
+    console.log("response",response);
     return response.data;
   } catch (error: any) {
     const errorResponse: ErrorResponse = error.response?.data || { message: 'Something went wrong' };
